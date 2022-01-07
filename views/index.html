@@ -2,32 +2,37 @@
 
 <html>
    <head>
-      <title>File Metadata</title>
-      <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon"/>
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <title>File Metadata Microservice</title>
+      <link rel="shortcut icon" href="" type="image/x-icon"/>
       <link href="/public/style.css" rel="stylesheet" type="text/css">
    </head>
 
    <body>
-      <div class="container">
-        <h2>API Project: File Metadata Microservice</h2>
-
-        <h3>Usage:</h3>
-        <p>
-          Please Upload a File ...
-        </p>
-        <div class="view">
-          <h4 id="output"></h4>
+      <!--Title-->
+      <div id="title-container">
+        <h1>File Metadata Microservice</h1>
+        <h2>A freeCodeCamp project from the Back End Development and APIs Certification</h2>
+      </div>
+      <!--Content-->
+      <div id="main-container">
+        <div id="upload-image-container">
+          <!--POST request: upload image-->
           <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
-            <input id="inputfield" type="file" name="upfile">
-            <input id="button" type="submit" value="Upload">
+            <h3>Upload File</h3>
+            <input id="input" type="file" name="upfile"/>
+            <input id="button" type="submit" value="Upload"/>
           </form>
         </div>
-      </div>
-      <div class="footer">
+        <h3>Usage</h3>
         <p>
-          by 
-          <a href="http://www.freecodecamp.com">freeCodeCamp</a>
+          Make a POST request uploading a file and get information about the file: name, type and size (in bytes).
+        </p>
+        <h3>Output</h3>
+        <code>{"name": "my-file.jpg", "type": "image/jpeg", "size": 61841}</code>
+        <h3>Learn More</h3>
+        <p>
+          For more information please visit this project's repository on
+          <a href="https://github.com/victordrumond/file-metadata-microservice" target="_blank">GitHub</a>.
         </p>
       </div>
    </body>

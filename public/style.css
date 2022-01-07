@@ -1,42 +1,95 @@
-/****** Main Styling ******/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #222;
-  background-color: #ECF0F1;
-  text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	color: black;
+	background-color: white;
+	text-align: center;
 }
 
-.container {
-  padding: 0;
-  margin-top: 40px;
+#title-container {
+	margin: 3rem 0;
 }
 
-.footer {
-  margin-top: 60px;
+#main-container {
+	width: 90%;
+	margin: 0 auto 4rem;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+#upload-image-container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 1px 1.5rem 1.5rem;
+  background-color: #2574A9;
+  border-radius: 0.5rem;
+}
+
+#upload-image-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#upload-image-container form h3 {
+  color: white;
+  margin-top: 1.5rem;
+}
+
+#input {
+  margin-bottom: 0.25rem;
+  width: 75%;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+#button {
+  margin-top: 0.5rem;
+}
+
+input[type=file] {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  width: 300px;
+  margin-right: 1rem;
+  padding: 0.75rem 0.5rem;
+  border-radius: 2px;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: white;
+  color: black;
+}
+
+input[type=submit]:hover {
+  background-color: lightgrey;
+}
+
+p {
+	font-size: 18px;
+}
+
+code {
+	font-family: monospace;
+	font-size: 18px;
+  padding: 5px;
+	line-height: 2;
+  color: black;
+  background-color: lightgrey;
 }
 
 a {
-  color: #2574A9;
-}
-
-input {
-  display: block;
-  position: relative;
-  margin: 10px auto;
-}
-
-input#button {
-  width: 230px;
-}
-
-.view {
-  position:relative;
-  margin: auto;
-  margin-top: 40px;
-  border: 1px  solid  #aaa;
-  padding: 20px;
-  width: 60%;
-  min-width: 400px;
+	color: #2574A9;
+	font-size: 18px;
 }
